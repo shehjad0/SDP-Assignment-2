@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHero Tube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="px-16">
+    <header>
+        <nav class="pt-6">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <img src="./Logo.png" alt="">
+                </div>
+                <div class="navbar-center">
+                    <a id="sort-button" class="btn normal-case text-lg rounded font-medium text-[gray]">Sort by view</a>
+                </div>
+                <div class="navbar-end">
+                    <a href="./blog.html" class="btn text-lg rounded font-medium bg-[red] text-white" target="_blank">Blog</a>
+                </div>
+            </div>
+            <hr class="mt-6 mb-6">
+        </nav>
+    </header>
+
+    <main>
+        <section id="tabs-section" class="flex justify-center mb-[40px]">
+            <div id="tabs" class="tabs text-[gray]"></div>
+        </section>
+        <section>
+            <div id="card-section" class="flex flex-col justify-center items-center"></div>
+            <div id="card-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
